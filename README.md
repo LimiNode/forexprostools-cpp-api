@@ -22,7 +22,7 @@ C++ Библиотека для загрузки новостей с Forexprosto
 
 Файл *ForexprostoolsApi.hpp* содержит код для работы с API.
 Файл *ForexprostoolsApiEasy.hpp* содержит вспомогательные функции, в частности класс *News* для хранения данных новостей.
-Файл *ForexprostoolsDataStore.hpp* содержит класс *DataStore* для хранения новостей в формате файла хранилища библиотеки [xquotes_history](https://github.com/NewYaroslav/xquotes_history)
+Файл *ForexprostoolsDataStore.hpp* содержит класс *DataStore* для хранения новостей в формате файла хранилища библиотеки [xquotes_history](https://github.com/LimiNode/xquotes_history)
 
 ### Класс для хранения новости
 
@@ -130,12 +130,12 @@ int main() {
 
 *forexprostools-cpp-api* зависит от следующих внешних библиотек / пакетов
 
-* Библиотека *CURL* для работы с *https*. Помимо *curl* вам может понадобится еще *OpenSSL* - [https://curl.haxx.se/windows/](https://curl.haxx.se/windows/) [https://github.com/NewYaroslav/curl-7.60.0-win64-mingw](https://github.com/NewYaroslav/curl-7.60.0-win64-mingw)
+* Библиотека *CURL* для работы с *https*. Помимо *curl* вам может понадобится еще *OpenSSL* - [https://curl.haxx.se/windows/](https://curl.haxx.se/windows/) [https://github.com/LimiNode/curl-7.60.0-win64-mingw](https://github.com/LimiNode/curl-7.60.0-win64-mingw)
 * *Header-only* библиотека для работы с *JSON* - [https://github.com/nlohmann/json](https://github.com/nlohmann/json)
 * Библиотека *zlib* для работы с сжатыми данными. Библиотеку нужно собрать или подключит ее файлы в проект. Репозиторий: [https://github.com/madler/zlib](https://github.com/madler/zlib)
-* Библиотека *gzip*, это оболочка над *zlib*, рекомендую этот [fork](https://github.com/NewYaroslav/gzip-hpp), а не оригинал, так как в оригинале нет загрушек в *header* файлах - [https://github.com/mapbox/gzip-hpp](https://github.com/mapbox/gzip-hpp) [https://github.com/NewYaroslav/gzip-hpp](https://github.com/NewYaroslav/gzip-hpp)
-* Библиотека *xquotes_history* для работы с хранилищем новостей. Репозиторий: [https://github.com/NewYaroslav/xquotes_history](https://github.com/NewYaroslav/xquotes_history)
-* Библиотека *xtime*, эта библиотека нужна для работы с меткой времени. Можно просто добавить два файла *.cpp* и *.hpp* в проект. Репозиторий: [https://github.com/NewYaroslav/xtime_cpp.git](https://github.com/NewYaroslav/xtime_cpp.git)
+* Библиотека *gzip*, это оболочка над *zlib*, рекомендую этот [fork](https://github.com/LimiNode/gzip-hpp), а не оригинал, так как в оригинале нет загрушек в *header* файлах - [https://github.com/mapbox/gzip-hpp](https://github.com/mapbox/gzip-hpp) [https://github.com/LimiNode/gzip-hpp](https://github.com/LimiNode/gzip-hpp)
+* Библиотека *xquotes_history* для работы с хранилищем новостей. Репозиторий: [https://github.com/LimiNode/xquotes_history](https://github.com/LimiNode/xquotes_history)
+* Библиотека *xtime*, эта библиотека нужна для работы с меткой времени. Можно просто добавить два файла *.cpp* и *.hpp* в проект. Репозиторий: [https://github.com/LimiNode/xtime_cpp.git](https://github.com/LimiNode/xtime_cpp.git)
 * *gcc* или *mingw* с поддержкой *C++11*, например: [https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
 
 Все необходимые библиотеки добавлены, как субмодули, в папку lib. 
